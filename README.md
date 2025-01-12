@@ -44,6 +44,4 @@ NGINX ONLY: place the config info from cdn in cdn & config info from main site t
 
  1. import the db in /database in whatever database software you use.
  3. change db info in /needed/scripts.php in main & cdn 
- 4. change your recaptcha info in /recaptcha.php and in /Login/newage.php
- 5. start render server.
  6. Done.
