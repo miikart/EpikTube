@@ -1,0 +1,8 @@
+<div class="staticSidebarBox">
+	<div class="staticSidebar<?php if($current_page == "about" || $current_page == "privacy" || $current_page == "terms") { echo "Highlight"; } else { echo "Item"; } ?>"><?php if($current_page != "about" && $current_page != "privacy" && $current_page != "terms") { echo '<a href="/t/about">'; } ?>About EpikTube<?php if($current_page != "about" && $current_page != "privacy" && $current_page != "terms") { echo '</a>'; } ?></div>
+	<div class="staticSidebar<?php if($current_page == "pr") { echo "Highlight"; } else { echo "Item"; } ?>"><?php if($current_page != "pr") { echo '<a href="/t/pr">'; } ?>Press Releases<?php if($current_page != "pr") { echo '</a>'; } ?></div>
+	<div class="staticSidebar<?php if($current_page == "about_news") { echo "Highlight"; } else { echo "Item"; } ?>"><?php if($current_page != "about_news") { echo '<a href="/t/about_news">'; } ?>Media Coverage<?php if($current_page != "about_news") { echo '</a>'; } ?></div>
+    <div class="staticSidebar<?php if($current_page == "contact") { echo "Highlight"; } else { echo "Item"; } ?>"><?php if($current_page != "contact") { echo '<a href="/contact">'; } ?>Contact Us<?php if($current_page != "contact") { echo '</a>'; } ?></div>
+    <div class="staticSidebar<?php if($current_page == "jobs") { echo "Highlight"; } else { echo "Item"; } ?>"><?php if($current_page != "jobs") { echo '<a href="/t/jobs">'; } ?>Jobs at EpikTube<?php if($current_page != "jobs") { echo '</a>'; } ?></div>
+    <div class="staticSidebar<?php if($current_page == "help") { echo "Highlight"; } else { echo "Item"; } ?>"><?php if($current_page != "help") { echo '<a href="/t/help">'; } ?>FAQs<?php if($current_page != "help") { echo '</a>'; } ?></div>
+</div>

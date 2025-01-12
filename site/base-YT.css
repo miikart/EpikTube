@@ -1,0 +1,222 @@
+/* HTML Overrides */
+
+dt {
+	font-weight: bold;
+	padding-bottom: 5px
+	}
+	
+dd {
+	padding-bottom: 15px;
+	}
+	
+emphasis {
+	font-style: italic;
+	}
+
+
+
+
+/* Common Elements */
+
+.standardText {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+}
+.mediumText {
+	font-size: 13px;
+	font-weight: normal;
+}
+.littleText {
+	font-size: 11px;
+	font-weight: normal;
+}
+.smallText {
+	font-size: 10px;
+	font-weight: normal;
+}
+.xsmallText {}
+.largeText {}
+.xlargeText {}
+
+.title1 {}
+.title2 {}
+.title3 {}
+.title4 {}
+.title5 {}
+.header1 {
+}
+
+.codeBox {
+	font-family: Courier, "Courier New", monopsace;
+	background-color: #EEEEEE;
+	border: 1px solid #CCCCCC;
+	padding: 8px;
+}
+
+.required {
+	color: #FF0000;
+}
+
+.heavyFocusBox {
+	background-color: #CCCCCC;
+	border: 1px solid #999999;
+	padding: 8px;
+}
+.mediumFocusBox {}
+.lightFocusBox {
+	background-color: #EEEEEE;
+	border: 1px solid #CCCCCC;
+	padding: 8px;
+}
+.clearFocusBox {}
+.heavyAttentionBox {}
+.mediumAttentionBox {}
+.lightAttentionBox {}
+.clearAttentionBox {}
+
+
+
+
+/* Masthead Elements */
+
+#baseDiv {
+	position: relative;
+	width: 875px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#logoTagDiv {
+	float: left;
+}
+#logoDiv {
+	float: left;
+}
+#taglineDiv {
+	position: absolute;
+	top: 30px;
+	left: 136px;
+}
+#tagline {
+	color: #666666;
+	font-size: 16px;
+	font-weight: bold;
+}
+#utilDiv {
+	margin-left: 136px;
+	padding-bottom: 6px;
+	/* border-bottom: 1px dotted #CCCCCC; */
+	text-align: right;
+}
+.utilDelim {
+	padding-left: 3px;
+	padding-right: 3px;
+}
+#iconMail {
+	vertical-align: text-bottom; padding: 1px 0px 1px 0px;
+}
+#searchDiv {
+	margin-top: 6px;
+	margin-bottom: 4px;
+	text-align: right;
+}
+#searchField {
+	width: 280px;
+	color: #FF3333;
+	font-size: 12px;
+}
+#globalNavDiv {
+	clear: both;
+}
+#globalSubNavDiv {}
+#footerDiv {
+	clear: both;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	font-size: 11px;
+	text-align: center;
+}
+#footerUtilDiv {}
+#copyrightDiv {
+	margin-top: 12px;
+	text-align: center;
+}
+#footerRSSspan {
+	padding-left: 16px;
+}
+
+
+
+
+/* Signin Signup Elements */
+
+#siSigninDiv {
+	margin-left: 500px;
+	padding: 8px;
+}
+#siSigninSubhead {}
+#sisuLoginTable {
+	margin-top: 8px;
+}
+#sisuForgotDiv {
+	padding-top: 4px;
+	font-size: 11px;
+	color: #333333;
+}
+#siSignupCell {
+	vertical-align: top;
+}
+
+#siSignupDiv {
+	float: left;
+	margin-bottom: 12px;
+	width: 420px;
+}
+#siSignupDesc { }
+#siSignupLinkDiv {
+	padding-bottom: 12px;
+}
+
+#suInOrderToDiv {
+	background-color: #FFFFCC;
+	border: 1px solid #CCCC66;
+	margin: 6px 25%;
+	padding: 6px;
+	font-weight: bold;
+}
+#suSignupDiv {
+	float: left;
+	margin-bottom: 12px;
+}
+#suRequiredTopDiv {
+	margin-top: 2px;
+}
+#suSignupTable {
+	padding-top: 8px;
+}
+#suSignupTable td { 
+	padding: 4px;
+}
+#suTOSDiv {
+	padding-top: 6px;
+}
+#suSubmitDiv {
+	padding: 14px 0px;
+}
+#suRequiredBottomDiv { }
+
+#suSigninDiv {
+	margin-left: 500px;
+}
+#suLoginTable { }
+#suWhatisDiv {
+	margin-top: 24px;
+}
+
+
+
+/* Groups Elements */
+
+.groupSideNavDiv {
+	margin-bottom: 2px;
+}

@@ -1,0 +1,7 @@
+{
+    "require": {
+        "softcreatr/php-mime-detector": "^3.2",
+        "phpmailer/phpmailer": "^6.8",
+        "enricodias/email-validator": "^0.7" 
+    }
+}

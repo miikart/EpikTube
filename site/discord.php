@@ -1,0 +1,1 @@
+<?php exit(header("Location: https://discord.gg/pUTJT6mCvz")); ?>

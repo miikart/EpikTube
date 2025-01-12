@@ -1,0 +1,1 @@
+This has the templates for error pages such as a 404 or 500

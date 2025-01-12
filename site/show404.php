@@ -1,0 +1,1 @@
+<?php include_once("needed/start.php"); session_error_index("We're sorry, the page you requested cannot be found.", "error"); ?>

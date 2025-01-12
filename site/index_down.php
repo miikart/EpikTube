@@ -1,0 +1,1 @@
+<?php require "_templates/_errors/maintenance.php"; ?>

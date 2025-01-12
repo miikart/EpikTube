@@ -1,0 +1,63 @@
+/* HTML Base Styles */
+
+h1 {
+	font-size: 18px;
+	font-weight: bold;
+	}
+
+h2 {
+	font-size: 16px;
+	font-weight: bold;
+	}
+
+h3 {
+	font-size: 14px;
+	font-weight: bold;
+	}
+
+h4 {
+	font-size: 12px;
+	font-weight: bold;
+	}
+	
+	
+/* HTML Conditional Styles */
+/* Add to headings depending on context (open text vs. box) */
+/* H3 is default size for box titles */
+
+.pgTitle {
+	color: #114477;
+	}
+	
+.boxTitle {
+	margin: 0px 0px 5px 5px;
+	width: 100%;
+	border-bottom: 1px dashed #999;
+	color: #444444;
+	}
+
+
+/* Static Template Elements */
+
+.staticSidebarBox {
+	border-left: 2px solid #CC6633; 
+	float: right; 
+	width: 150px; 
+	background-color: #EEEEEE;
+	margin-left: 25px;
+	margin-bottom: 15px;
+	}
+	
+.staticSidebarItem {
+	padding: 6px; 
+	border-bottom: 1px dashed #CCCCCC;
+	font-weight: bold;
+	}
+	
+.staticSidebarHighlight {
+	padding: 6px; 
+	background-color: #CCCCCC;
+	border-bottom: 1px dashed #CCCCCC;
+	font-weight: bold;
+	}
+	
