@@ -13,7 +13,7 @@ $config = [
     'emport' => 'youshouldknow',
     'ffmpeg' => 'ffmpeg',
     'ffprobe' => 'ffprobe',
-    'aeskey' => 'youshouldknow'
+    'aeskey' => 'youshouldknow' /// openssl rand -hex 32
 ];
 function decrypt($encryptedData) {
     global $config;
