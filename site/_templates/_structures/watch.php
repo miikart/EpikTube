@@ -3,13 +3,38 @@
 <html>
 <head>
 	
-	<title>EpikTube - <?php echo htmlspecialchars($video['title']) ?></title>
+		<?php if(!isset($session) || ($session['branding'] != 2)) { ?>
+	<title>EpikTube - Broadcast Yourself.</title>
 	  
 	<link rel="stylesheet" href="/styles" type="text/css">
 	<link rel="stylesheet" href="/base.css" type="text/css">
     
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	
+
+	<link rel="alternate" title="EpikTube - [RSS]" href="/rssls">
+	
+	<?php } ?>
+	
+	
+	
+<?php if(isset($session) && ($session['branding'] != 1)) { ?>
+
+	
+	<title>YouTube - Broadcast Yourself.</title>
+
+	<link rel="stylesheet" href="/styles-YT.css" type="text/css">
+	<link rel="stylesheet" href="/base-YT.css" type="text/css">
+
+	<link rel="icon" href="/tube.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/tube.ico" type="image/x-icon">
+	
+
+	<link rel="alternate" title="YouTube - [RSS]" href="/rssls">
+	
+	<?php } ?>
+	
 	
     <meta name="title" content="<?php echo htmlspecialchars($video['title']) ?>">
     <meta name="description" content="<?php echo htmlspecialchars($video['description']); ?>">
