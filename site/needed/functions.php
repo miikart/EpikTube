@@ -634,7 +634,10 @@ function generateId2($length = 11) {
     return strtoupper(bin2hex($funny_ids));
 }
 
-
+function getUserCountryCode() {
+    global $countryCode;
+    return $countryCode;
+}
 
  // You'd think this took a good while... It didn't. I can finally make an accurate country dropdown without any hassle thanks to this: http://code-cocktail.in/tools/convert-selectbox-to-array/#
       $_COUNTRIES = [
