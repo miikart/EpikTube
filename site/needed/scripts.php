@@ -75,4 +75,19 @@ if($profile->rowCount() == 0) {
  
 } 
 
+	$countryCode = $_SERVER["HTTP_CF_IPCOUNTRY"];
+
+
+if ($countryCode == 'MX' || 'US' || 'CA' ) {
+   $NA = 1;
+}
+if ($_SERVER['HTTP_HOST'] == 'eu.epiktube.xyz') { // i have no idea else not to hardcore this - mii
+    $isNotNASiteURL = 0;
+    $strings_region['accountdel'] = 'GDPR Delete';
+} else {
+    $isNotNASiteURL = 1;
+        $strings_region['accountdel'] = 'Delete My Account';
+
+}
+
 ?>
