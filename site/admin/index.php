@@ -1,5 +1,11 @@
 <?php
 require_once __DIR__ . '/../needed/scripts.php';
+
+
+if(!isset($session['staff']) || $session['staff'] != 1) {
+	redirect("Location: /index.php"); 
+    exit;
+}
 $hikt['vids'] = $conn->query("SELECT COUNT(v.vid) FROM videos v INNER JOIN users u ON v.uid = u.uid WHERE v.converted = 1 AND u.termination = 0");
 $hikt['vids'] = $hikt['vids']->fetchColumn();
 
