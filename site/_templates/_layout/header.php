@@ -1,7 +1,10 @@
 
+
+
 	<?php if(!isset($session) || ($session['branding'] != 2)) { ?>
-<div id="logoDiv"><a href="/"><img src="/img/<?php echo invokethConfig("logo") ?>" width="120" height="48" alt="EpikTube" border="0"></a></div>
-<?php } ?>
+<div id="logoDiv"><a href="/"><img src="/img/<?php echo invokethConfig("logo") ?>" width="120" height="48" alt="EpikTube" border="0"></a>  </div>
+<?php } ?>   
+
 
 
 
@@ -10,7 +13,14 @@
 <?php if(isset($session) && ($session['branding'] != 1)) { ?>
 <div id="logoDiv"><a href="/"><img src="/img/logo_youtube.gif" width="120" height="48" alt="YouTube" border="0"></a></div>
 <?php } ?>
-<div id="taglineDiv"><img src="/img/tagline-20pt.gif" alt="Broadcast Yourself"></div>
+<div id="taglineDiv"><img src="/img/tagline-20pt.gif" alt="Broadcast Yourself"> <?php if($isNotNASiteURL == 0) { ?>
+
+<b>(<?= getUserCountryCode() ?>)</b>
+<?php } ?></div> 
+
+
+
+
 
 
 
@@ -226,3 +236,9 @@
 	</tr>
 </table>
 </div> <!-- end globalSubNavDiv -->
+
+
+<?php if($NA == 1 && ($isNotNASiteURL == 0)) { ?>
+
+<?php alert("Hello, It has been detected you are on the EU server of EpikTube in North America, Do not complain slowdown here", "error") ?>
+<?php } ?>
