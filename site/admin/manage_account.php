@@ -1,6 +1,9 @@
 <?php
 require_once __DIR__ . '/../needed/scripts.php';
-
+if(!isset($session['staff']) || $session['staff'] != 1) {
+	redirect("Location: /index.php"); 
+    exit;
+}
 $profile = $conn->prepare("SELECT * FROM users WHERE users.username = ?");
 $profile->execute([$_GET['user']]);
 

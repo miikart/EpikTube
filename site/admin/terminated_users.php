@@ -1,5 +1,10 @@
 <?php
 require "admin_head.php";
+
+if(!isset($session['staff']) || $session['staff'] != 1) {
+	redirect("Location: /index.php"); 
+    exit;
+}
 $terminated_users = $conn->query("SELECT * FROM users WHERE termination = 1");
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
  try {
