@@ -3,8 +3,8 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/vendor/autoload.php");
 ob_start();
 // has to be hardcoded
 ini_set('session.cookie_path', '/');
-ini_set('session.cookie_domain', '.' . $_SERVER['HTTP_HOST']);
-session_set_cookie_params(3600 * 24 * 7); 
+ini_set('session.cookie_domain', '.' . $_SERVER['HTTP_HOST'] );
+session_set_cookie_params(3600 * 24 * 7, '.', '.' . $_SERVER['HTTP_HOST']);
 session_start(); 
 $config = [
     'host' => 'youshouldknow',
@@ -634,7 +634,10 @@ function generateId2($length = 11) {
     return strtoupper(bin2hex($funny_ids));
 }
 
-
+function getUserCountryCode() {
+    global $countryCode;
+    return $countryCode;
+}
 
  // You'd think this took a good while... It didn't. I can finally make an accurate country dropdown without any hassle thanks to this: http://code-cocktail.in/tools/convert-selectbox-to-array/#
       $_COUNTRIES = [
