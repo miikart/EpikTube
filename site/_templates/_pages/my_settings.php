@@ -20,29 +20,13 @@
 							<option value="2" <?php echo ($member['branding'] == 2) ? "selected" : ""; ?>>YouTube</option>
 						</select>
 					</td>
-                </tr>
-         <tr>
-             </tr>
-             <tr valign="top">
-					<td colspan="2"><div class="tableSubTitle">Video Page Settings</div><div class="tableSubTitleInfo">Past uploads before 1/4/2025 will not count toward this and will load in 360p*.</div></td>
-				</tr>
-                   <td width="200" valign="top" align="right"><span class="label">Force Video Quality:</span></td>
-		<td>
 
-                <input type="radio" name="videosetting" value="920p"   <?php echo ($member['forcevidquality'] == "920p") ?  'checked="true"' : ""; ?>>
-                <label for="1">920p</label><br>
-                <input type="radio" name="videosetting" value="360p" <?php echo ($member['forcevidquality'] == "360p") ?  'checked="true"' : ""; ?>>
-                <label for="2">360p</label><br>
-		</td>
-        </tr>
-        <tr>
         
         
 
                 
 
                     <td><input type="submit" id="save" name="save" value="Update Settings"></td>
-                </tr>
         </table>
     </form>
     
