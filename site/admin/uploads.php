@@ -1,5 +1,10 @@
 <?php
 require_once __DIR__ . '/../needed/scripts.php';
+
+if(!isset($session['staff']) || $session['staff'] != 1) {
+	redirect("Location: /index.php"); 
+    exit;
+}
 $lastupload = $conn->query("SELECT * FROM videos LEFT JOIN users ON users.uid = videos.uid WHERE (users.termination = 0) ORDER BY uploaded DESC LIMIT 20")->fetchAll();
 force_login(); 
 
