@@ -276,7 +276,7 @@ CREATE TABLE `messages` (
 CREATE TABLE `picks` (
   `video` varchar(12) NOT NULL,
   `featured` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `special` int(11) NOT NULL
+  `special` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
