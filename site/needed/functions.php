@@ -3,8 +3,8 @@ require_once($_SERVER["DOCUMENT_ROOT"]."/vendor/autoload.php");
 ob_start();
 // has to be hardcoded
 ini_set('session.cookie_path', '/');
-ini_set('session.cookie_domain', '.' . $_SERVER['HTTP_HOST']);
-session_set_cookie_params(3600 * 24 * 7); 
+ini_set('session.cookie_domain', '.' . $_SERVER['HTTP_HOST'] );
+session_set_cookie_params(3600 * 24 * 7, '.', '.' . $_SERVER['HTTP_HOST']);
 session_start(); 
 $config = [
     'host' => 'youshouldknow',
